@@ -1,4 +1,4 @@
-from num import basen
+from num import basen, pad
 
 """
 Класс для махинаций с IP
@@ -10,7 +10,7 @@ class ip:
     """
     if not ip.isValid(a, b, c, d):
       raise AttributeError('{}.{}.{}.{} - это не IP'.format(a, b, c, d))
-    
+
     self.__addr = (a, b, c, d)
   
   @staticmethod
@@ -36,4 +36,14 @@ class ip:
     Преобразуем IP в строку
     """
     return sep.join(map(lambda x : basen(x, base), self.__addr))
+  
+  def toClassicString(self, sep='.', base=10):
+    """
+    Классическая запись Ip с нулями, например 255.015.088.000
+    """
+    if not base in (2, 10, 16):
+      raise AttributeError('Классической формы для основания ' + str(base) + ' пока не придумали')
+
+    zzz = (8 if base == 2 else 3 if base == 10 else 2)
+    return sep.join(map(lambda x : pad(basen(x, base), zzz), self.__addr))
   
