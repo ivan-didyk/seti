@@ -14,7 +14,8 @@ class ip:
     self.__addr = (a, b, c, d)
   
   @staticmethod
-  def fromSring(text : str, sep='.', base=10):
+  def fromString(text : str, sep='.', base=10):
+    # @todo Для разных квадрантов разные СС
     """
     Получаем IP из строчки вида 1.2.3.4
     :param sep: Разделитель, например для "1 2 3 4" это пробел
@@ -22,6 +23,11 @@ class ip:
     """
     a, b, c, d = map(lambda x : int(x, base), text.split(sep))
     return ip(a, b, c, d)
+  
+  @staticmethod
+  def fromNumber(num : str, base=10):
+    # @todo
+    pass
   
   @staticmethod
   def isValid(a: int, b : int, c : int, d : int):
@@ -32,6 +38,7 @@ class ip:
     return (0 <= a <= 255) and (0 <= b <= 255) and (0 <= c <= 255) and (0 <= d <= 255)
 
   def toString(self, sep='.', base=10):
+    # @todo Для разных квадрантов разные СС
     """
     Преобразуем IP в строку
     """

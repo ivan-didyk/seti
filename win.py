@@ -2,17 +2,17 @@
 
 """
 
-__chars = " ".join("""NUL 	SOH 	STX 	ETX 	EOT 	ENQ 	ACK 	BEL 	BS 	HT 	LF 	VT 	FF 	CR 	SO 	SI
+__chars = " ".join("""🅾 	SOH 	STX 	ETX 	EOT 	ENQ 	ACK 	BEL 	BS 	HT 	LF 	VT 	FF 	CR 	SO 	SI
 DLE 	DC1 	DC2 	DC3 	DC4 	NAK 	SYN 	ETB 	CAN 	EM 	SUB 	ESC 	FS 	GS 	RS 	US
 SP 	! 	" 	# 	$ 	% 	& 	' 	( 	) 	* 	+ 	, 	- 	. 	/
 0 	1 	2 	3 	4 	5 	6 	7 	8 	9 	: 	; 	< 	= 	> 	?
 @ 	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O
 P 	Q 	R 	S 	T 	U 	V 	W 	X 	Y 	Z 	[ 	\ 	] 	^ 	_
 ` 	a 	b 	c 	d 	e 	f 	g 	h 	i 	j 	k 	l 	m 	n 	o
-p 	q 	r 	s 	t 	u 	v 	w 	x 	y 	z 	{ 	| 	} 	~ 	DEL
+p 	q 	r 	s 	t 	u 	v 	w 	x 	y 	z 	{ 	| 	} 	~ 	⛔
 Ђ 	Ѓ 	‚ 	ѓ 	„ 	… 	† 	‡ 	€ 	‰ 	Љ 	‹ 	Њ 	Ќ 	Ћ 	Џ
 ђ 	‘ 	’ 	“ 	” 	• 	– 	— 	? 	™ 	љ 	› 	њ 	ќ 	ћ 	џ
-NBSP 	Ў 	ў 	Ј 	¤ 	Ґ 	¦ 	§ 	Ё 	© 	Є 	« 	¬ 	SHY 	® 	Ї
+🟦 	Ў 	ў 	Ј 	¤ 	Ґ 	¦ 	§ 	Ё 	© 	Є 	« 	¬ 	SHY 	® 	Ї
 ° 	± 	І 	і 	ґ 	µ 	¶ 	· 	ё 	№ 	є 	» 	ј 	Ѕ 	ѕ 	ї
 А 	Б 	В 	Г 	Д 	Е 	Ж 	З 	И 	Й 	К 	Л 	М 	Н 	О 	П
 Р 	С 	Т 	У 	Ф 	Х 	Ц 	Ч 	Ш 	Щ 	Ъ 	Ы 	Ь 	Э 	Ю 	Я
